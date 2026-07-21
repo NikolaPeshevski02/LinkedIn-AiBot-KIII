@@ -1,0 +1,30 @@
+2026-07-21T08:39:12.481+02:00  INFO 43356 --- [ai-bot-backend] [main] m.u.f.a.AiBotBackendApplication          : Starting AiBotBackendApplication using Java 21.0.9 with PID 43356 (C:\Users\pesev\Documents\Linkedin-bot\ai-bot-template\ai-bot-backend\target\classes started by pesev in C:\Users\pesev\Documents\Linkedin-bot)
+2026-07-21T08:39:12.482+02:00 DEBUG 43356 --- [ai-bot-backend] [main] m.u.f.a.AiBotBackendApplication          : Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-07-21T08:39:12.483+02:00  INFO 43356 --- [ai-bot-backend] [main] m.u.f.a.AiBotBackendApplication          : The following 1 profile is active: "dev"
+2026-07-21T08:39:14.177+02:00  INFO 43356 --- [ai-bot-backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-21T08:39:14.177+02:00  INFO 43356 --- [ai-bot-backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-07-21T08:39:14.244+02:00  INFO 43356 --- [ai-bot-backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-21T08:39:14.448+02:00  INFO 43356 --- [ai-bot-backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-21T08:39:14.604+02:00  INFO 43356 --- [ai-bot-backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@194911c1
+2026-07-21T08:39:14.607+02:00  INFO 43356 --- [ai-bot-backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-21T08:39:14.658+02:00  INFO 43356 --- [ai-bot-backend] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/aibot (PostgreSQL 17.4)
+2026-07-21T08:39:14.753+02:00  INFO 43356 --- [ai-bot-backend] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.047s)
+2026-07-21T08:39:14.777+02:00  INFO 43356 --- [ai-bot-backend] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+2026-07-21T08:39:14.783+02:00  INFO 43356 --- [ai-bot-backend] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-07-21T08:39:14.898+02:00  INFO 43356 --- [ai-bot-backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-21T08:39:14.971+02:00  INFO 43356 --- [ai-bot-backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-07-21T08:39:15.011+02:00  INFO 43356 --- [ai-bot-backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-21T08:39:15.382+02:00  INFO 43356 --- [ai-bot-backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-21T08:39:16.588+02:00  INFO 43356 --- [ai-bot-backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-21T08:39:16.992+02:00  WARN 43356 --- [ai-bot-backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-21T08:39:17.183+02:00 DEBUG 43356 --- [ai-bot-backend] [main] m.u.f.aibotbackend.web.filter.JwtFilter  : Filter 'jwtFilter' configured for use
+2026-07-21T08:39:18.149+02:00  INFO 43356 --- [ai-bot-backend] [main] m.u.f.a.AiBotBackendApplication          : Started AiBotBackendApplication in 6.072 seconds (process running for 7.139)
+2026-07-21T08:39:18.164+02:00  INFO 43356 --- [ai-bot-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-21T08:39:18.168+02:00  INFO 43356 --- [ai-bot-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
