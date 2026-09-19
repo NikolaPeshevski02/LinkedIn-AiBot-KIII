@@ -22,21 +22,21 @@ jobs:
       - name: Build backend
         run: |
           docker build \
-            -t ${{ secrets.DOCKERHUB_NAME }}/ai-bot-backend:latest \
+            -t ${{ secrets.DOCKERHUB_NAME }}ai-bot-template/ai-bot-backend:latest \
             ./ai-bot-backend
 
       - name: Push backend
         run: |
           docker push \
-            ${{ secrets.DOCKERHUB_NAME }}/ai-bot-backend:latest
+            ${{ secrets.DOCKERHUB_NAME }}ai-bot-template/ai-bot-backend:latest
 
       - name: Build frontend
         run: |
           docker build \
-            -t ${{ secrets.DOCKERHUB_NAME }}/ai-bot-frontend:latest \
+            -t ${{ secrets.DOCKERHUB_NAME }}ai-bot-template/ai-bot-frontend:latest \
             ./ai-bot-frontend
 
       - name: Push frontend
         run: |
           docker push \
-            ${{ secrets.DOCKERHUB_NAME }}/ai-bot-frontend:latest
+            ${{ secrets.DOCKERHUB_NAME }}ai-bot-template/ai-bot-frontend:latest
