@@ -17,26 +17,26 @@ jobs:
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build backend
         run: |
           docker build \
-            -t ${{ secrets.DOCKERHUB_USERNAME }}/ai-bot-backend:latest \
+            -t ${{ secrets.DOCKERHUB_NAME }}/ai-bot-backend:latest \
             ./ai-bot-backend
 
       - name: Push backend
         run: |
           docker push \
-            ${{ secrets.DOCKERHUB_USERNAME }}/ai-bot-backend:latest
+            ${{ secrets.DOCKERHUB_NAME }}/ai-bot-backend:latest
 
       - name: Build frontend
         run: |
           docker build \
-            -t ${{ secrets.DOCKERHUB_USERNAME }}/ai-bot-frontend:latest \
+            -t ${{ secrets.DOCKERHUB_NAME }}/ai-bot-frontend:latest \
             ./ai-bot-frontend
 
       - name: Push frontend
         run: |
           docker push \
-            ${{ secrets.DOCKERHUB_USERNAME }}/ai-bot-frontend:latest
+            ${{ secrets.DOCKERHUB_NAME }}/ai-bot-frontend:latest
