@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-bot-backend
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: ai-bot-backend
+
+  template:
+    metadata:
+      labels:
+        app: ai-bot-backend
+
+    spec:
+      containers:
+        - name: ai-bot-backend
+          image: nikolapeshevski/ai-bot-backend:latest
+          ports:
+            - containerPort: 8080
+
+          envFrom:
+            - configMapRef:
+                name: ai-bot-backend-config
+
+            - secretRef:
+                name: ai-bot-backend-secret

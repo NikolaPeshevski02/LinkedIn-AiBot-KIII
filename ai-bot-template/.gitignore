@@ -1,1 +1,4 @@
 .env
+k8s/backend/secret.yaml
+k8s/frontend/secret.yaml
+k8s/database/secret.yaml

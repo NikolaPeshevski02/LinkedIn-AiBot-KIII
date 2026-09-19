@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ai-bot-backend-config
+data:
+  DB_URL_DOCKER: "jdbc:postgresql://postgres:5432/aibot"
+  BOT_MAX_STEPS_PER_TARGET: "50"
+  BOT_HEADLESS: "true"
+  JWT_EXPIRATION: "864000000"
+  JWT_HEADER: "Authorization"
+  JWT_TOKEN_PREFIX: "Bearer"
+  VEZILKA_BASE_URL: "https://doniraj.vezilka.ai"
+  LLM_BASE_URL: "https://ollama.com/v1"

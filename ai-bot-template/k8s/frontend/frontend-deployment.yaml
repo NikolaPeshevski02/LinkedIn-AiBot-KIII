@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-bot-frontend
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: ai-bot-frontend
+
+  template:
+    metadata:
+      labels:
+        app: ai-bot-frontend
+
+    spec:
+      containers:
+        - name: ai-bot-frontend
+          image: nikolapeshevski/ai-bot-frontend:latest
+          ports:
+            - containerPort: 80
