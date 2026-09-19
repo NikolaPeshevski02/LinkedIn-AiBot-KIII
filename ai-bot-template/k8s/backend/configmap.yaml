@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: ai-bot-backend-config
+  namespace: ai-bot
 data:
   DB_URL_DOCKER: "jdbc:postgresql://postgres:5432/aibot"
   BOT_MAX_STEPS_PER_TARGET: "50"
@@ -11,3 +12,4 @@ data:
   JWT_TOKEN_PREFIX: "Bearer"
   VEZILKA_BASE_URL: "https://doniraj.vezilka.ai"
   LLM_BASE_URL: "https://ollama.com/v1"
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://postgres:5432/aibot"

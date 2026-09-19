@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ai-bot-frontend
+  namespace: ai-bot
 spec:
   selector:
     app: ai-bot-frontend

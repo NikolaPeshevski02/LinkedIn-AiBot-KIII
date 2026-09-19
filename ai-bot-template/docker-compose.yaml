@@ -9,7 +9,7 @@
       volumes:
         - pgdata:/var/lib/postgresql/data
 
-    backend:
+    ai-bot-backend:
       build: ./ai-bot-backend
       env_file:
       - .env
@@ -24,7 +24,7 @@
     frontend:
       build: ./ai-bot-frontend
       depends_on:
-        - backend
+        - ai-bot-backend
       ports:
         - "3000:80"
 
